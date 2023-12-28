@@ -10,13 +10,13 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "D:\\AutomationTraining\\QA1\\src\\test\\java\\com\\feature\\Goibibo_QA1.feature",
-						glue = "step_definition_goibibo",
+@CucumberOptions(
+						features = {"D:\\AutomationTraining\\QA1\\src\\test\\java\\com\\feature\\Goibibo_QA1.feature"},
+						glue = {"com.step_definition_goibibo"}, 
 						dryRun = false,
-						tags = ("@Login_Ibibo, @HotelSelect"),
-								
-						plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-					)
+						tags = "@Login_Ibibo and @HotelSelect" ,							
+						plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+				)
 	
 public class Goibibo_QA1_RunnerClass extends BaseClass {
 	
