@@ -1,8 +1,15 @@
 package com.QA1Pom;
 
-public class LoginAndSignUp_Pom {
+import org.openqa.selenium.support.PageFactory;
 
-	public static void login() {
+import com.IPT_QA1_Goibibo.base.BaseClass;
+
+public class LoginAndSignUp_Pom extends BaseClass{
+
+	public LoginAndSignUp_Pom() {
 		
-	}
+			PageFactory.initElements(driver, this);
+		}
+		
+	
 }
