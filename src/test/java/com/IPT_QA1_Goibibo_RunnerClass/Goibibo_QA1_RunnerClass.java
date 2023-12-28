@@ -24,6 +24,7 @@ public class Goibibo_QA1_RunnerClass extends BaseClass {
 public static void launchBrowser() throws InterruptedException {
 		
 		getDriver("chrome");
+		System.out.println("Changes made by Lavanya");
 		
 }	
 
