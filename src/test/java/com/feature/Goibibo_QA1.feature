@@ -1,5 +1,6 @@
 Feature: Goibibo  Hotel Booking
 
+@Login_Ibibo
 Scenario: To click login and signup
 Given user launch the url "https://www.goibibo.com/"
 And user click login 
@@ -9,6 +10,7 @@ And user enter the name
 And user enter the mailid
 Then user click let's go
 
+@HotelSelect
 Scenario: To select the hotel
 Given user click hotels option
 And user select india option
@@ -17,9 +19,11 @@ And user select the check in date
 And user select the check out date
 And User click search 
 
+@RoomSelect
 Scenario: To select the room
 Given user click view room options
 And user click selected room
+
 
 Scenario: To enter the guest details 
 Given user enter the first name 
