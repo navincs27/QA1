@@ -1,11 +1,15 @@
 package com.QA1Pom;
 
+<<<<<<< HEAD
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+=======
+>>>>>>> 19c900045e581378ad58aae62b7c222324933344
 import org.openqa.selenium.support.PageFactory;
 
 import com.IPT_QA1_Goibibo.base.BaseClass;
 
+<<<<<<< HEAD
 public class LoginAndSignUp_Pom  extends BaseClass{
 
 	public LoginAndSignUp_Pom() {
@@ -67,4 +71,14 @@ public class LoginAndSignUp_Pom  extends BaseClass{
 	  public WebElement getSearchResult() {
 		  return searchResult;
 	  }
+=======
+public class LoginAndSignUp_Pom extends BaseClass{
+
+	public LoginAndSignUp_Pom() {
+		
+			PageFactory.initElements(driver, this);
+			
+		}
+		
+>>>>>>> 19c900045e581378ad58aae62b7c222324933344
 }
